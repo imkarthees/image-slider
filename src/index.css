@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+@import 'tailwindcss';
+
+* {
+  font-family: 'Lexend';
+}
+.image-slider-container {
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(1fr));
+  justify-items: center;
+  gap: 1rem;
+}
+.slide-show {
+  max-height: 100dvh;
+  filter: blur(100px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
